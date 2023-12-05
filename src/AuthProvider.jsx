@@ -8,6 +8,7 @@ const auth = getAuth(app);
 const AuthProvider = ({children}) => {
 	const [loggedinuser, setLoggedinuser] = useState(null);
 	const [loading, setLoading] = useState(true);
+	const [bookingInfo, setBookingInfo]  = useState(null);
 	useEffect(() => {
 		const unsubscribe = onAuthStateChanged(auth, currentUser => {
 			setLoggedinuser(currentUser); setLoading(false);
@@ -16,7 +17,7 @@ const AuthProvider = ({children}) => {
 			unsubscribe();
 		}
 	}, [])
-	const authInfo = { loggedinuser, setLoggedinuser, loading};
+	const authInfo = { loggedinuser, setLoggedinuser, loading, bookingInfo, setBookingInfo };
 
 	return (
 	  <AuthContext.Provider value= {authInfo}>

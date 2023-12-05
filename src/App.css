@@ -1,7 +1,84 @@
-.none {
-  display: none;
-}
-
 .links {
   padding: 0 5px;
+}
+
+.main-bg-img {  
+  
+  background-size: cover;
+}
+.search-bg {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.search-bg::placeholder {
+  color: white;
+  opacity: 1; /* Firefox */
+}
+
+.search-bg::-ms-input-placeholder { /* Edge 12-18 */
+  color: white;
+}
+.search-bg:focus {
+  color: black !important;
+}
+.logo-size {
+  width: 180px;
+}
+.btn-color {
+  background-color: #f9a51a;
+  color: black;
+}
+.ms-fixing {
+  margin-left: 150px;
+}
+.btn-color:hover {
+  background-color: transparent;
+  color: white;
+}
+.place-boxes {
+  width: 270px;
+  height: 416px;
+  background-size: cover;
+}
+.ttm {
+  margin-top: 290px;
+}
+.place-boxes:hover {
+  border: 3px solid #f9a51a;
+}
+.form-styling {
+  /* width: 30%; */
+  background: white;
+  color: black;
+}
+.form-styling p {
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+
+.btn-dp:hover {
+  background-color: black;
+  color: white;
+}
+.ts-color {
+  color: #cccccc;
+}
+.fs-h1 {
+  font-size: 50px;
+}
+.alt-logo-size {
+  width: 110px;
+}
+.btn-alt:hover {
+  color: black;
+}
+.iframe-sizing {
+  width: 450px;
+  height: 600px;
+}
+.img-hotel {
+  width: 250px;
+  height: 100%;
+}
+.star-rating {
+  width: 15px;
 }
