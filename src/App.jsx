@@ -3,6 +3,7 @@ import './App.css'
 import { AuthContext } from './AuthProvider';
 import { useNavigate } from 'react-router-dom';
 import Header from './Header';
+import bgImg from '../public/Rectangle 1.png';
 
 
 function App() {
@@ -46,7 +47,7 @@ function App() {
     navigate(`/details/${info.id}`);
   }
   return (
-    <div className='main-bg-img pb-5' style={{backgroundImage: 'linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://i.ibb.co/ngs1Cmy/Rectangle-1.png)'}}>
+    <div className='main-bg-img pb-5' style={{backgroundImage: `linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('${bgImg}')`}}> 
       <Header />
       <div className='container pb-5'>
         <div id='one' className='d-flex justify-content-between'>
@@ -80,3 +81,4 @@ function App() {
 
 export default App
 
+// https://i.ibb.co/ngs1Cmy/Rectangle-1.png
