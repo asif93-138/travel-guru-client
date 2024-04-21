@@ -25,17 +25,18 @@ const Details = () => {
     <HeaderAlt />
     <div className='container text-center'>
     <h4>Trip Details </h4>
-                <p><b>Origin :</b> {bookingInfo.origin} &nbsp; <b>Destination :</b> {bookingInfo.destination} &nbsp; <b>From :</b> {bookingInfo.from} &nbsp; <b>To :</b> {bookingInfo.to}</p>
+                <div className='d-sm-flex justify-content-center'><div><span className='mx-2'><b>Origin :</b> {bookingInfo.origin}</span><span className='mx-2'><b>Destination :</b> {bookingInfo.destination}</span></div>
+                <div><span className='mx-2'><b>From :</b> {bookingInfo.from}</span><span className='mx-2'><b>To :</b> {bookingInfo.to}</span></div></div>
     </div>
-<div className='container d-flex justify-content-between my-5'>
-            <div>
+<div className='container d-sm-flex justify-content-between my-5'>
+            <div className='ms-4 ms-sm-0'>
 <h4 className=''>Stay in {bookingInfo.destination}</h4>
 
 {hotels.length  && 
 <>
-<div className='d-flex mb-5'>
+<div className='d-sm-flex mb-5'>
     <img src={photo1} className='img-hotel' />
-    <div className='p-4'>
+    <div className='p-sm-4'>
         <h5 className='m-0'>{hotels[0].name}</h5>
         <p className='m-0'><small>4 guests 2 bedrooms 2 beds 2 baths</small></p>
         <p className='m-0'><small>Wif Air conditioning Kitchen</small></p>
@@ -43,9 +44,9 @@ const Details = () => {
         <p className='m-0'><img src={photo} className='star-rating' /> <small>4.9(20) &nbsp; <b>${hotels[0].price[0]}/night</b> &nbsp; <b>${hotels[0].price[1]}/total</b></small></p>
     </div>
 </div>
-<div className='d-flex mb-5'>
+<div className='d-sm-flex mb-5'>
     <img src={photo2} className='img-hotel' />
-    <div className='p-4'>
+    <div className='p-sm-4'>
         <h5 className='m-0'>{hotels[1].name}</h5>
         <p className='m-0'><small>4 guests 2 bedrooms 2 beds 2 baths</small></p>
         <p className='m-0'><small>Wif Air conditioning Kitchen</small></p>
@@ -53,9 +54,9 @@ const Details = () => {
         <p className='m-0'><img src={photo} className='star-rating' /> <small>4.9(20) &nbsp; <b>${hotels[1].price[0]}/night</b> &nbsp; <b>${hotels[1].price[1]}/total</b></small></p>
     </div>
 </div>
-<div className='d-flex mb-5'>
+<div className='d-sm-flex mb-5'>
     <img src={photo3} className='img-hotel' />
-    <div className='p-4'>
+    <div className='p-sm-4'>
         <h5 className='m-0'>{hotels[2].name}</h5>
         <p className='m-0'><small>4 guests 2 bedrooms 2 beds 2 baths</small></p>
         <p className='m-0'><small>Wif Air conditioning Kitchen</small></p>
